@@ -1,7 +1,7 @@
 -- Databricks notebook source
 -- MAGIC %md
 -- MAGIC # 03 · Metric Views — Building the Genie Semantic Layer
--- MAGIC **Humana Finance Team · Databricks Workshop**
+-- MAGIC **Finance Team · Databricks Workshop**
 -- MAGIC
 -- MAGIC ---
 -- MAGIC
@@ -131,7 +131,7 @@ LANGUAGE YAML
 AS $$
 version: 1.1
 comment: >
-  RCM Finance metric view for the Humana training workshop.
+  RCM Finance metric view for the training workshop.
 
   COVERAGE: Claims, denials, AR aging, and cash collections across
   Medicare Advantage (MA), Medicaid (MCD), and Commercial (COM) lines of business.

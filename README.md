@@ -1,4 +1,4 @@
-# Humana Finance Team — Databricks 2-Hour Workshop
+# Finance Team — Databricks 2-Hour Workshop
 
 > Build a complete Revenue Cycle Management analytics pipeline on Databricks —
 > from raw synthetic claims data through Delta Lake tables, window-function SQL,
@@ -214,5 +214,5 @@ See `instructor_guide.md` for:
 
 ---
 
-*Built by Databricks Field Engineering for Humana Finance Team, June 2026.*
+*Built by Databricks Field Engineering · June 2026.*
 *Data is fully synthetic — no real patient, member, or claims data is used.*

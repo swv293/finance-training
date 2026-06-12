@@ -1,7 +1,7 @@
 # Databricks notebook source
 # MAGIC %md
 # MAGIC # Notebook 05: Workflow Orchestration — Month-End Pipeline
-# MAGIC **Humana Finance Team — Databricks Workshop**
+# MAGIC **Finance Team — Databricks Workshop**
 # MAGIC
 # MAGIC This notebook demonstrates how to orchestrate a multi-step data pipeline
 # MAGIC using Databricks Workflows. In production, month-end reporting pipelines

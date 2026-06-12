@@ -1,7 +1,7 @@
 -- Databricks notebook source
 -- MAGIC %md
 -- MAGIC # 01 · SQL Basics — Finance Analytics
--- MAGIC **Humana Finance Team · Databricks Workshop**
+-- MAGIC **Finance Team · Databricks Workshop**
 -- MAGIC
 -- MAGIC ---
 -- MAGIC

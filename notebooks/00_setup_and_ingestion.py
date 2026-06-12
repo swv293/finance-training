@@ -1,7 +1,7 @@
 # Databricks notebook source
 # MAGIC %md
 # MAGIC # Notebook 00: Setup & Data Ingestion
-# MAGIC **Humana Finance Team — Databricks Workshop**
+# MAGIC **Finance Team — Databricks Workshop**
 # MAGIC
 # MAGIC This notebook:
 # MAGIC 1. Creates the training catalog and schema

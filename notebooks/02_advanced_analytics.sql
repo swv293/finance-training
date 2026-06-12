@@ -1,7 +1,7 @@
 -- Databricks notebook source
 -- MAGIC %md
 -- MAGIC # 02 · Advanced Analytics — CTEs, Window Functions & Budget Variance
--- MAGIC **Humana Finance Team · Databricks Workshop**
+-- MAGIC **Finance Team · Databricks Workshop**
 -- MAGIC
 -- MAGIC ---
 -- MAGIC

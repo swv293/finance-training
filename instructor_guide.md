@@ -1,4 +1,4 @@
-# Instructor Guide — Humana Finance Databricks Workshop
+# Instructor Guide — Finance Team Databricks Workshop
 
 **Duration:** 2 hours | **Audience:** Finance analysts, AR/billing/coding staff
 
@@ -24,7 +24,7 @@
 **Key messages:**
 1. *"Databricks isn't just a data warehouse — it's the place where raw data becomes finance insight, and where AI meets governance."*
 2. Walk the left nav: Catalog → Notebooks → SQL Editor → Dashboards → Genie → Workflows
-3. Introduce the RCM scenario: *"Imagine you're an AR analyst at Humana. You receive 835 remittance files. Claims are denied. AR is aging. You need to know where to focus your team."*
+3. Introduce the RCM scenario: *"Imagine you're an AR analyst on the finance team. You receive 835 remittance files. Claims are denied. AR is aging. You need to know where to focus your team."*
 4. Draw the Medallion Architecture on a whiteboard or slide:
    - **Bronze:** raw 835s and claims off the payer portal (dirty, complete, auditable)
    - **Silver:** cleaned, deduped, enriched with provider tier and LOB

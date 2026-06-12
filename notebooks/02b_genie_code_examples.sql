@@ -1,7 +1,7 @@
 -- Databricks notebook source
 -- MAGIC %md
 -- MAGIC # 02b · Genie Code — AI-Assisted SQL for Finance Analytics
--- MAGIC **Humana Finance Team · Databricks Workshop**
+-- MAGIC **Finance Team · Databricks Workshop**
 -- MAGIC
 -- MAGIC ---
 -- MAGIC

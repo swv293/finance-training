@@ -1,7 +1,7 @@
 -- Databricks notebook source
 -- MAGIC %md
 -- MAGIC # 04 · Dashboard Setup — Finance KPI Dashboard
--- MAGIC **Humana Finance Team · Databricks Workshop**
+-- MAGIC **Finance Team · Databricks Workshop**
 -- MAGIC
 -- MAGIC ---
 -- MAGIC
