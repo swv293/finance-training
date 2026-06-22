@@ -89,19 +89,18 @@ All rows are randomly generated with realistic distributions; no real patient or
 
 ```
 notebooks/
-├── 00_setup_and_ingestion.py     ← START HERE. Generates all synthetic data, creates Delta tables.
-│                                    Run this first — all other notebooks depend on these tables.
-├── 01_sql_basics.sql             ← Open in SQL Editor. Claims analysis, denial rates, provider joins.
-├── 03_advanced_analytics.sql     ← CTEs, LAG(), RANK()+QUALIFY, rolling averages, budget variance.
+├── 00_setup_and_ingestion.py    ← START HERE. Generates all synthetic data, creates Delta tables.
+│                                   Run this first — all other notebooks depend on these tables.
+├── 01_sql_basics.sql            ← Open in SQL Editor. Claims analysis, denial rates, provider joins.
 ├── 02_genie_code_examples.sql   ← Genie Code demo. Pre-built complex window function queries
-│                                    with natural-language prompts and annotated SQL output.
-├── 04_metric_views.sql           ← Metric view YAML, 10 measures, 12 dimensions, Genie Space setup.
-├── 05_dashboard_setup.sql        ← 5 named datasets for Finance KPI Dashboard, UI build guide.
-└── 06_workflow_demo.py           ← MERGE INTO, DQ checks, cron scheduling, dbutils.widgets.
+│                                   with natural-language prompts and annotated SQL output.
+├── 03_advanced_analytics.sql    ← CTEs, LAG(), RANK()+QUALIFY, rolling averages, budget variance.
+├── 04_metric_views.sql          ← Metric view YAML, 10 measures, 12 dimensions, Genie Space setup.
+├── 05_dashboard_setup.sql       ← 5 named datasets for Finance KPI Dashboard, UI build guide.
+└── 06_workflow_demo.py          ← MERGE INTO, DQ checks, cron scheduling, dbutils.widgets.
 ```
 
 Run notebooks in order: **00 → 01 → 02 → 03 → 04 → 05 → 06**
-
 
 ---
 
