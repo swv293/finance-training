@@ -1,6 +1,6 @@
 -- Databricks notebook source
 -- MAGIC %md
--- MAGIC # 02b · Genie Code — AI-Assisted SQL for Finance Analytics
+-- MAGIC # 02 · Genie Code — AI-Assisted SQL for Finance Analytics
 -- MAGIC **Finance Team · Databricks Workshop**
 -- MAGIC
 -- MAGIC ---
@@ -487,4 +487,4 @@ ORDER BY lob, bucket_sort;
 -- MAGIC 3. Specify **ordering direction** for rankings ("lowest denial rate is best")
 -- MAGIC 4. Use **follow-up prompts** to refine rather than rewriting the original prompt
 -- MAGIC
--- MAGIC **Continue to:** `03_metric_views.sql` to build the Genie semantic layer
+-- MAGIC **Continue to: `04_metric_views.sql` to build the Genie semantic layer

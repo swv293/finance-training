@@ -76,12 +76,12 @@ All rows are randomly generated with realistic distributions; no real patient or
 | 1 | Workspace tour & Delta Lake concepts | — | Instructor talk | 15 min |
 | 2 | Data setup: generate all 8 RCM tables, explore with Delta | `00_setup_and_ingestion.py` | Hands-on notebook | 20 min |
 | 3 | SQL basics: joins, aggregation, denial analysis | `01_sql_basics.sql` | Hands-on SQL Editor | 20 min |
-| 4 | Genie Code: AI-generated window function SQL | `02b_genie_code_examples.sql` | Live demo + practice | 15 min |
-| 5 | Advanced analytics: CTEs, rankings, budget variance | `02_advanced_analytics.sql` | Hands-on SQL Editor | 15 min |
-| 6 | Metric views: semantic layer for Genie | `03_metric_views.sql` | Hands-on SQL Editor | 20 min |
-| 7 | Dashboard building: 5 widgets, filters, sharing | `04_dashboard_setup.sql` | Hands-on UI | 15 min |
+| 4 | Genie Code: AI-generated window function SQL | `02_genie_code_examples.sql` | Live demo + practice | 15 min |
+| 5 | Advanced analytics: CTEs, rankings, budget variance | `03_advanced_analytics.sql` | Hands-on SQL Editor | 15 min |
+| 6 | Metric views: semantic layer for Genie | `04_metric_views.sql` | Hands-on SQL Editor | 20 min |
+| 7 | Dashboard building: 5 widgets, filters, sharing | `05_dashboard_setup.sql` | Hands-on UI | 15 min |
 | 8 | Governance: Unity Catalog lineage, audit | — | Demo | 10 min |
-| 9 | Workflows: month-end pipeline scheduling | `05_workflow_demo.py` | Demo + configure | 10 min |
+| 9 | Workflows: month-end pipeline scheduling | `06_workflow_demo.py` | Demo + configure | 10 min |
 
 ---
 
@@ -92,17 +92,16 @@ notebooks/
 ├── 00_setup_and_ingestion.py     ← START HERE. Generates all synthetic data, creates Delta tables.
 │                                    Run this first — all other notebooks depend on these tables.
 ├── 01_sql_basics.sql             ← Open in SQL Editor. Claims analysis, denial rates, provider joins.
-├── 02_advanced_analytics.sql     ← CTEs, LAG(), RANK()+QUALIFY, rolling averages, budget variance.
-├── 02b_genie_code_examples.sql   ← Genie Code demo. Pre-built complex window function queries
+├── 03_advanced_analytics.sql     ← CTEs, LAG(), RANK()+QUALIFY, rolling averages, budget variance.
+├── 02_genie_code_examples.sql   ← Genie Code demo. Pre-built complex window function queries
 │                                    with natural-language prompts and annotated SQL output.
-├── 03_metric_views.sql           ← Metric view YAML, 10 measures, 12 dimensions, Genie Space setup.
-├── 04_dashboard_setup.sql        ← 5 named datasets for Finance KPI Dashboard, UI build guide.
-└── 05_workflow_demo.py           ← MERGE INTO, DQ checks, cron scheduling, dbutils.widgets.
+├── 04_metric_views.sql           ← Metric view YAML, 10 measures, 12 dimensions, Genie Space setup.
+├── 05_dashboard_setup.sql        ← 5 named datasets for Finance KPI Dashboard, UI build guide.
+└── 06_workflow_demo.py           ← MERGE INTO, DQ checks, cron scheduling, dbutils.widgets.
 ```
 
-Run notebooks in order: **00 → 01 → 02b → 02 → 03 → 04 → 05**
+Run notebooks in order: **00 → 01 → 02 → 03 → 04 → 05 → 06**
 
-`02b` comes before `02` because the Genie Code demo (Segment 4) runs before the advanced analytics hands-on (Segment 5).
 
 ---
 
@@ -138,18 +137,18 @@ DROP SCHEMA IF EXISTS main.finance_training_firstname CASCADE;
 
 There are **24 TODOs** embedded across all notebooks.
 TODOs 1–9 and 12–24 are in-notebook exercises.
-TODOs 10–11 are in `02b_genie_code_examples.sql` — they ask you to write Genie Code prompts yourself and evaluate the generated SQL.
+TODOs 10–11 are in `02_genie_code_examples.sql` — they ask you to write Genie Code prompts yourself and evaluate the generated SQL.
 
 | TODOs | Location | Topic |
 |---|---|---|
 | 1–3 | `00_setup_and_ingestion.py` | Delta DESCRIBE HISTORY, time travel, ALTER TABLE |
 | 4–6 | `01_sql_basics.sql` | Denial rate by state, provider join, NULLIF safe division |
-| 7–9 | `02_advanced_analytics.sql` | LAG() trend, RANK()+QUALIFY, rolling average |
-| 10–11 | `02b_genie_code_examples.sql` | Genie Code prompt writing + SQL evaluation |
-| 12–15 | `03_metric_views.sql` | Metric view YAML, MEASURE() aggregation, add a dimension |
+| 7–9 | `03_advanced_analytics.sql` | LAG() trend, RANK()+QUALIFY, rolling average |
+| 10–11 | `02_genie_code_examples.sql` | Genie Code prompt writing + SQL evaluation |
+| 12–15 | `04_metric_views.sql` | Metric view YAML, MEASURE() aggregation, add a dimension |
 | 16–19 | Dashboard UI | Chart types, reference lines, cross-filtering, sharing |
 | 20–22 | Genie Space UI | NL queries, SQL instructions, trusted assets |
-| 23–24 | `05_workflow_demo.py` | Cron expression, DQ alert threshold |
+| 23–24 | `06_workflow_demo.py` | Cron expression, DQ alert threshold |
 
 ---
 

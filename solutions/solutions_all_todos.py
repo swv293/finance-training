@@ -13,12 +13,12 @@
 # MAGIC |---|---|---|
 # MAGIC | 1–3 | `00_setup_and_ingestion.py` | Delta Lake table operations |
 # MAGIC | 4–6 | `01_sql_basics.sql` | Joins, aggregation, safe division |
-# MAGIC | 7–9 | `02_advanced_analytics.sql` | CTEs, window functions |
-# MAGIC | 10–11 | `02b_genie_code_examples.sql` | Genie Code prompt writing |
-# MAGIC | 12–15 | `03_metric_views.sql` | Metric view YAML, MEASURE() |
+# MAGIC | 7–9 | `03_advanced_analytics.sql` | CTEs, window functions |
+# MAGIC | 10–11 | `02_genie_code_examples.sql` | Genie Code prompt writing |
+# MAGIC | 12–15 | `04_metric_views.sql` | Metric view YAML, MEASURE() |
 # MAGIC | 16–19 | Dashboard UI | Chart types, filters, sharing |
 # MAGIC | 20–22 | Genie Space UI | Instructions, trusted assets |
-# MAGIC | 23–24 | `05_workflow_demo.py` | Workflow tasks, timeouts |
+# MAGIC | 23–24 | `06_workflow_demo.py` | Workflow tasks, timeouts |
 
 # COMMAND ----------
 
@@ -285,7 +285,7 @@
 # MAGIC %md
 # MAGIC ---
 # MAGIC # TODOs 7–9 · Advanced Analytics
-# MAGIC *Source: `02_advanced_analytics.sql`*
+# MAGIC *Source: `03_advanced_analytics.sql`*
 
 # COMMAND ----------
 
@@ -467,7 +467,7 @@
 # MAGIC %md
 # MAGIC ---
 # MAGIC # TODOs 10–11 · Genie Code
-# MAGIC *Source: `02b_genie_code_examples.sql`*
+# MAGIC *Source: `02_genie_code_examples.sql`*
 # MAGIC
 # MAGIC These TODOs are about **writing prompts** and evaluating the SQL Genie Code generates.
 # MAGIC There is no single "correct" SQL — the goal is to assess whether what Genie produces is valid.
@@ -534,7 +534,7 @@
 
 # MAGIC %md
 # MAGIC ## TODO 11
-# MAGIC **Question:** Starting from the scorecard query in `02b_genie_code_examples.sql`, use Genie Code
+# MAGIC **Question:** Starting from the scorecard query in `02_genie_code_examples.sql`, use Genie Code
 # MAGIC to add a year-over-year comparison showing each provider's composite score in 2024 vs 2025.
 # MAGIC Flag whether their overall ranking improved or worsened.
 # MAGIC
@@ -610,7 +610,7 @@
 # MAGIC %md
 # MAGIC ---
 # MAGIC # TODOs 12–15 · Metric Views
-# MAGIC *Source: `03_metric_views.sql`*
+# MAGIC *Source: `04_metric_views.sql`*
 
 # COMMAND ----------
 
@@ -929,7 +929,7 @@
 # MAGIC %md
 # MAGIC ---
 # MAGIC # TODOs 23–24 · Workflows
-# MAGIC *Source: `05_workflow_demo.py`*
+# MAGIC *Source: `06_workflow_demo.py`*
 
 # COMMAND ----------
 
@@ -944,7 +944,7 @@
 # MAGIC 3. Configure:
 # MAGIC    - Task name: `dashboard_refresh`
 # MAGIC    - Type: **Notebook**
-# MAGIC    - Source: **Workspace** → select `04_dashboard_setup.sql`
+# MAGIC    - Source: **Workspace** → select `05_dashboard_setup.sql`
 # MAGIC    - Cluster: same SQL Warehouse as other SQL tasks
 # MAGIC    - **Depends on:** `gold_refresh` (Task 3)
 # MAGIC 4. Click **Save task**
@@ -979,7 +979,7 @@
 # MAGIC - Databricks waits the retry delay, then tries once more
 # MAGIC - If the retry also times out → downstream tasks are skipped → failure email is sent
 # MAGIC
-# MAGIC **In-notebook handling (optional — add to `05_workflow_demo.py`):**
+# MAGIC **In-notebook handling (optional — add to `06_workflow_demo.py`):**
 
 # COMMAND ----------
 

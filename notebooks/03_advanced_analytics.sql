@@ -494,4 +494,4 @@ ORDER BY months_over_budget DESC, avg_variance_pct DESC;
 -- MAGIC | Rolling average | 2d | `AVG() OVER (ROWS BETWEEN 6 PRECEDING...)` |
 -- MAGIC | Budget variance | 3a–c | `CASE WHEN variance_pct > 5 THEN '⚠ Over Budget'` |
 -- MAGIC
--- MAGIC **Continue to:** `03_metric_views.sql` to build the Genie semantic layer
+-- MAGIC **Continue to: `04_metric_views.sql` to build the Genie semantic layer

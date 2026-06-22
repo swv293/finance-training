@@ -284,8 +284,8 @@ display(summary)
 # MAGIC | Task Name | Notebook | Depends On |
 # MAGIC |---|---|---|
 # MAGIC | `bronze_refresh` | `00_setup_and_ingestion` | *(none — runs first)* |
-# MAGIC | `silver_transform` | `05_workflow_demo` | `bronze_refresh` |
-# MAGIC | `gold_refresh` | `04_dashboard_setup` | `silver_transform` |
+# MAGIC | `silver_transform` | `06_workflow_demo` | `bronze_refresh` |
+# MAGIC | `gold_refresh` | `05_dashboard_setup` | `silver_transform` |
 # MAGIC
 # MAGIC **For each task:**
 # MAGIC - Type: Notebook
@@ -322,7 +322,7 @@ display(summary)
 # MAGIC ---
 # MAGIC ## 📝 TODOs — Try These Yourself
 # MAGIC
-# MAGIC **TODO 23:** Add a 4th task to the workflow that runs `04_dashboard_setup.sql`
+# MAGIC **TODO 23:** Add a 4th task to the workflow that runs `05_dashboard_setup.sql`
 # MAGIC to refresh dashboard datasets after the gold layer updates.
 # MAGIC Where should it go in the dependency chain?
 # MAGIC

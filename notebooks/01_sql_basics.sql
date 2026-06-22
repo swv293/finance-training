@@ -420,7 +420,7 @@ ORDER BY service_month, lob;
 -- MAGIC - Multi-table JOINs
 -- MAGIC - Rate calculations with NULLIF protection
 -- MAGIC
--- MAGIC **Continue to:** `02_advanced_analytics.sql` for CTEs and window functions
+-- MAGIC **Continue to: `03_advanced_analytics.sql` for CTEs and window functions
 -- MAGIC
 -- MAGIC ---
 -- MAGIC ### Summary of SQL Patterns Used

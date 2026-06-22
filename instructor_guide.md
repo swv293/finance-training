@@ -9,7 +9,7 @@
 - [ ] Confirm all attendees have a Databricks Free Edition workspace or provisioned access
 - [ ] Run `00_setup_and_ingestion.py` yourself to confirm data generates cleanly (~3 min)
 - [ ] Have `01_sql_basics.sql` open in the SQL Editor, schema already set
-- [ ] Have `03_metric_views.sql` ready to run — metric view creation takes ~15 seconds
+- [ ] Have `04_metric_views.sql` ready to run — metric view creation takes ~15 seconds
 - [ ] Pre-create the Genie space so you can demo it immediately (setup takes 5 min)
 - [ ] Prepare a dashboard with the 4 datasets loaded so you can build widgets live
 - [ ] Test Genie Code: open the SQL Editor, click the Genie Code icon (right panel)
@@ -65,7 +65,7 @@ Then: `SELECT * FROM bronze_claims LIMIT 5;` to show the difference after adding
 - Run query 3b (billed/paid by state) as a group — this is the most relatable to their daily work
 
 **Pacing for Part B (advanced):**
-- Build the CTE together (query 1a in `02_advanced_analytics.sql`) — narrate each WITH block
+- Build the CTE together (query 1a in `03_advanced_analytics.sql`) — narrate each WITH block
 - Run the LAG query (2a) — show the `prev_month_rate` and `trend` columns
 - Let attendees work on TODO 7 (at-risk flagging) for 5 min
 
@@ -166,8 +166,8 @@ Point out: `MEASURE()` is the new aggregate function for metric views. Without i
 **Live build (do this fast — audience should watch, not build):**
 1. Workflows → Create Job → name it `finance_month_end_pipeline`
 2. Add Task 1: bronze_refresh → Notebook → select `00_setup_and_ingestion`
-3. Add Task 2: silver_transform → Notebook → select `05_workflow_demo` → set dependency on Task 1
-4. Add Task 3: gold_refresh → SQL → select `04_dashboard_setup.sql` → depends on Task 2
+3. Add Task 2: silver_transform → Notebook → select `06_workflow_demo` → set dependency on Task 1
+4. Add Task 3: gold_refresh → SQL → select `05_dashboard_setup.sql` → depends on Task 2
 5. Set schedule: `0 6 1 * *` → Chicago timezone
 6. Add email alert → On failure
 
@@ -303,7 +303,7 @@ Genie should join silver_claims + silver_denials, filter to last 6 months, calcu
 In Genie space → Settings → Trusted Assets → Add Dashboard → select "Finance Operations KPI Dashboard". Users can now see the dashboard directly from Genie answers.
 
 ### TODO 23 (Workflow)
-Add Task 4: `dashboard_refresh` → SQL notebook `04_dashboard_setup.sql` → depends on `gold_refresh`. Position: after Task 3.
+Add Task 4: `dashboard_refresh` → SQL notebook `05_dashboard_setup.sql` → depends on `gold_refresh`. Position: after Task 3.
 
 ### TODO 24 (Workflow)
 In Task 1 settings → Advanced → Timeout: 5 minutes (300 seconds). If exceeded, the task fails and triggers the failure alert. Handle with: catch the timeout in the notebook using `try/except` or add a retry policy (Retries: 1, Retry on timeout: True).
